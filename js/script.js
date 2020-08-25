@@ -8,11 +8,11 @@
 // Vi ricordo che oggi pomeriggio alle 16:30 avete il recap sui cicli e condizioni!
 
 // Lista Cognomi
-let cognomi = ["Bianchi", "Rossi", "Duzioni", "Balsano", "Verdi"];
-let lista = document.getElementById('lista');
+var cognomi = ["Bianchi", "Rossi", "Duzioni", "Balsano", "Verdi"];
+var lista = document.getElementById('lista');
 // Chiedere all’utente il cognome
-let nuovo_cognome = prompt("Inserisici nuovo cognome")
-let contatore = 1;
+var nuovo_cognome = prompt("Inserisici nuovo cognome")
+var contatore = 1;
 // inserirlo in un array con altri cognomi
 cognomi.push(nuovo_cognome);
 
@@ -21,6 +21,12 @@ cognomi.sort();
 
 // stampo la lista ordinata alfebeticamente
 
-for (var i = 0; i < cognomi.length; i++) {
-   lista.innerHTML += "<li>" + contatore++ + " " + cognomi[i] + "</li>";  
+  for (var i = 0; i < cognomi.length; i++) {
+     lista.innerHTML += "<li>" + contatore++ + " " + cognomi[i] + "</li>";
+  }
+
+
+var i = 0;
+while (i < cognomi.lenght) &&  {
+
 }
