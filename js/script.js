@@ -9,13 +9,18 @@
 
 // Lista Cognomi
 let cognomi = ["Bianchi", "Rossi", "Duzioni", "Balsano", "Verdi"];
-
+let lista = document.getElementById('lista');
 // Chiedere all’utente il cognome
 let nuovo_cognome = prompt("Inserisici nuovo cognome")
+let contatore = 1;
 // inserirlo in un array con altri cognomi
 cognomi.push(nuovo_cognome);
 
 // ordino alfabeticamente la Lista
 cognomi.sort();
 
-// 
+// stampo la lista ordinata alfebeticamente
+
+for (var i = 0; i < cognomi.length; i++) {
+   lista.innerHTML += "<li>" + contatore++ + " " + cognomi[i] + "</li>";  
+}
