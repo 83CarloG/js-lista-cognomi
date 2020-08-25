@@ -25,8 +25,13 @@ cognomi.sort();
      lista.innerHTML += "<li>" + contatore++ + " " + cognomi[i] + "</li>";
   }
 
+var cercaNome = prompt("Dammi un cognome e ti dirò in che posizione dell'array si trova")
+var posizione = cognomi.findIndex(element => element.includes(cercaNome))
 
-var i = 0;
-while (i < cognomi.lenght) &&  {
+if (posizione !== -1){
 
+  document.getElementById('trova').innerHTML =  posizione + "  " + cercaNome;
 }
+ else {
+   document.getElementById('trova').innerHTML =  cercaNome + " non esiste nell'array."; 
+ }
